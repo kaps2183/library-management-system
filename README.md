@@ -3,7 +3,8 @@ Library management system - [Spring Boot]
 
 About -
 -----------
-This is service uses: 
+This service uses: 
+
     - Spring boot security - Basic Auth
     - spring web - REST Endpoints
     - Caching - spring cache
@@ -12,6 +13,7 @@ This is service uses:
 
 Steps -
 ------------
+
 1. Build the project - mvn clean install
 2. Run - LibraryManagementSystemApplication.java
 3. To test REST apis - please run provided rest client lms-rest-api.http
