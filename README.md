@@ -17,4 +17,4 @@ Steps -
 1. Build the project - mvn clean install
 2. Run - LibraryManagementSystemApplication.java
 3. To test REST apis - please run provided rest client lms-rest-api.http
-4. There are few unit tests for Service class [Libraray -> LibraryTest]
+4. There are few unit tests for Service class [Library -> LibraryTest]
