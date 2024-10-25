@@ -1,0 +1,61 @@
+### Send POST request with json body
+# @no-cookie-jar
+POST http://localhost:8080/lms/addBook
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+{
+    "isbn": "isbn-123",
+    "title": "Harry Potter",
+    "author": "J K Rowling",
+    "publicationYear": "1999",
+    "availableCopies": 200
+}
+
+### Send POST request with json body
+# @no-cookie-jar
+POST http://localhost:8080/lms/addBook
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+{
+  "isbn": "isbn-456",
+  "title": "Harry Potter II",
+  "author": "J K Rowling",
+  "publicationYear": "2001",
+  "availableCopies": 200
+}
+
+### GET request with a header
+# @no-cookie-jar
+GET http://localhost:8080/lms/findBookByISBN?isbn=isbn-123
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+
+### GET request with a header
+GET http://localhost:8080/lms/findBookByISBN?isbn=isbn-1234
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+### GET request with a header
+GET http://localhost:8080/lms/findBookByAuthor?author=J K Rowling
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+
+### PATCH request with a header
+PATCH http://localhost:8080/lms/borrowBook?isbn=isbn-123
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+### PATCH request with a header
+PATCH http://localhost:8080/lms/returnBook?isbn=isbn-456
+Authorization: Basic lms-user password
+Content-Type: application/json
+
+### DELETE request with a header
+DELETE http://localhost:8080/lms/removeBook?isbn=isbn-123
+Authorization: Basic lms-user password
+Content-Type: application/json
+
